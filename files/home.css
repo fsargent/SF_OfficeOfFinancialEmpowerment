@@ -1,0 +1,123 @@
+			#mainouter2 #center #hometext img {
+				width:177px;
+				height:56px;
+				margin-right:20px;
+				margin-bottom:10px;
+				float:left;
+			}
+	#mainouter3 {
+		width:1023px;
+		height:197px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-bottom:-2px;
+		background:url(../images/mainouter3bg.png) center top no-repeat;
+		position:relative;
+	}
+		#mainouter3 #left3 {
+			width:100px;
+			text-align:center;
+			position:absolute;
+			left:75px;
+			top:50px;
+			z-index:1;
+		}
+		#mainouter3 #left3b {
+			width:175px;
+			height:150px;
+			position:absolute;
+			left:200px;
+			top:20px;
+			z-index:1;
+		}
+		#mainouter3 #center3 {
+			width:430px;
+			position:absolute;
+			left:420px;
+			top:40px;
+			z-index:2;
+			color:#111111;
+			font: normal 11px/16px arial;
+		}
+			#mainouter3 #center3 .left {
+				float:left;
+				width:200px;
+			}
+			#mainouter3 #center3 .right {
+				float:right;
+				width:200px;
+			}
+				#mainouter3 #center3 .head {
+					font: bold 12px/14px arial;
+					text-transform:uppercase;
+				}
+				#mainouter3 #center3 p {
+					margin-top:5px;
+				}
+				#mainouter3 #center3 a {
+					margin-top:5px;
+					color:#00bff3;
+				}
+
+	#mainouter4 {
+		width:823px;
+		margin-left:auto;
+		margin-right:auto;
+		position:relative;
+	}
+		#mainouter4 #head4 {
+			margin-left:130px;
+			padding-top:15px;
+			width:580px;
+			font: 11px/16px times new roman, times, roman, times roman;
+			color:#252525;
+		}
+		#mainouter4 #content4 {
+			background:#fff;
+			margin:20px 38px;
+		}
+		#mainouter4 #content4 form input {
+			border:1px solid #b8b8b8;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+			vertical-align: middle;
+			margin-bottom:3px;
+			margin-bottom:0px\9;
+		}
+		#mainouter4 #content4 form input.big {
+			width:350px;
+		}
+		#mainouter4 #content4 form span {
+			cursor:pointer;
+			margin-right:10px;
+		}
+		#mainouter4 #content4 form div {
+			cursor:pointer;
+		}
+		#mainouter4 #content4 form div#submit {
+			margin-top:15px;
+			margin-right:20px;
+			width:138px;
+			height:44px;
+			background:url(../images/submit.png) no-repeat;
+			float:right;
+		}
+		#mainouter4 #content4 form img.q {
+			float:none;
+			width:12px;
+			height:12px;
+			cursor:pointer;
+		}
+		#mainouter4 #content4 form img.date {
+			width:16px;
+			height:18px;
+			cursor:pointer;
+		}
+			#mainouter4 #content4 table td.first {
+				width:290px;
+			}
+			#mainouter4 #content4 table td div {
+				float:left;
+				width:390px;
+			}

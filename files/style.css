@@ -1,0 +1,249 @@
+/*
+Theme Name: SF FEN
+Theme URI: http://wordpress.org/
+Description: Hi!
+Author: Grand SF
+Version: 1.0
+*/
+
+
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+
+@charset "utf-8";
+
+/* Reset Stylesheet - do not reset table elements */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+* {margin: 0;}
+
+/* bits from: https://github.com/necolas/normalize.css/blob/master/normalize.css */
+html {
+    font-size: 100%; /* 1 */
+    overflow-y: scroll; /* 2 */
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* 3 */
+    -webkit-text-size-adjust: 100%; /* 4 */
+    -ms-text-size-adjust: 100%; /* 4 */
+}
+a:active {outline: none;}
+a:focus {-moz-outline-style: none;}
+
+/* END - reset */
+body {
+	background:#f6f4f3 url(images/mainouterbg.jpg) center top no-repeat;
+}
+img {
+	float:left;
+	border:0px;
+}
+
+ul {
+	margin-left: 20px !important;
+	list-style-position: outside !important;
+	list-style-type: round;
+}
+
+
+.colorblue{color:#00bff3;}
+.colorblue a{color:#00bff3;text-decoration:none;}
+.colorblue a:hover{color:#046984;}
+
+
+/* define global navigation and framework elements */
+#mainouter {
+	width:100%;
+	height:100%;
+}
+	#mainouter2 {
+		width:1170px;
+		height:498px;
+		margin-left:auto;
+		margin-right:auto;
+		background:url(images/mainouter2bg.png) center top no-repeat;
+		position:relative;
+	}
+
+	#mainouter2R {
+		width:1170px;
+		height:640px;
+		margin-left:auto;
+		margin-right:auto;
+		background:url(images/mainouter2bg.png) center top no-repeat;
+		position:relative;
+	}
+
+		#mainouter2 #Rhead {						/* begin edits for resource page */
+			position:absolute;
+			width:890px;
+			height:692px;
+			left:130px;
+		}
+			#mainouter2 #Rhead img#headhome {
+				width:890px;
+				height:692px;
+				position:absolute;
+				top:0px;
+				left:0px;
+			}
+
+
+
+	#mainouter2 #head {				/* the images inside this div spill over - by design */
+			position:absolute;
+			width:890px;
+			height:498px;
+			left:130px;
+		}
+			#mainouter2 #head img#headhome {
+				width:890px;
+				height:692px;
+				position:absolute;
+				top:0px;
+				left:0px;
+			}
+			#mainouter2 #head img#headright {
+				width:76px;
+				height:65px;
+				cursor:pointer;
+				position:absolute;
+				top:115px;
+				right:0px;
+			}
+		#mainouter2 #left {
+			width:110px;
+			position:absolute;
+			left:115px;
+			top:327px;
+			z-index:1;
+			text-align:right;
+			line-height:12px;
+		}
+			#mainouter2 #left img {
+				float:right;
+			}
+			#mainouter2 #left span {
+				font: bold 12px/14px arial;
+			}
+			#mainouter2 #left p {
+				font: normal 12px/16px "Times New Roman", Times, serif, times new roman, times, roman, times roman;
+				color: #252525;
+				margin-top:5px;
+			}
+		#mainouter2 #center {
+			width:579px;
+			position:absolute;
+			left:243px;
+			top:383px;
+			z-index:2;
+			padding:0px 50px;
+		}
+			#mainouter2 #center #content {
+				width:579px;
+				float:left;
+			}
+				#mainouter2 #center #content p {
+					font: 14px/20px "Times New Roman", Times, serif, times new roman, times, roman, times roman;
+					color: #020000;
+				}
+				#mainouter2 #center #content p.head {
+					font: bold 11px/18px arial;
+					text-transform:uppercase;
+					margin-top:15px;
+				}
+				#mainouter2 #center #content p.note {
+					font-style:normal;
+					float:right;
+					width:272px;
+				}
+				#mainouter2 #center #content p.note a {
+					color:#00bff3;
+				}
+				#mainouter2 #center #content ul {
+					font: 13px/20px "Times New Roman", Times, serif, times new roman, times, roman, times roman;
+					font-style:normal;					
+					color: #020000;
+					list-style-position: outside;
+					margin-left:16px !important;
+					width:257px;
+					float:left;
+				}
+		#mainouter2 #right {
+			position:absolute;
+			top:327px;
+			left:924px;
+			z-index:1;
+			width:120px;
+			padding-left:20px;
+			line-height:16px;				/* required for the line-height in [#mainouter2 #right span] */
+			color: #252525;
+		}
+			#mainouter2 #right img#rightarrow {
+				width:53px;
+				height:62px;
+				position:absolute;
+				left:75px;
+				top:10px;
+				z-index:0;
+			}
+			#mainouter2 #right span {
+				font: bold 12px/14px arial;
+				text-transform:uppercase;
+				width:85px;
+				float:left;
+			}
+			#mainouter2 #right a {
+				color:#00bff3;
+			}
+			#mainouter2 #right p {
+				font: normal 11px/16px "Times New Roman", Times, serif, times new roman, times, roman, times roman;
+				margin-top:10px;
+				float:left;
+			}
+
+
+
+	#mainouter #foot {
+		position:relative;
+		width:640px;
+		height:87px;
+		margin-top:80px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-bottom:50px;
+		font-face: "Times New Roman", Times, serif;
+	}
+		#mainouter #foot img {
+			width:123px;
+			height:87px;
+			float:left;
+			margin-top:-55px;
+			margin-right:40px;
+		}
+		#mainouter #foot a {
+			cursor:pointer;
+			text-transform:uppercase;
+			font-size:11px;
+			margin-right:32px;
+			color:#020000;
+			text-decoration:none;
+		}
+		#mainouter #foot a:hover {
+			color:#666;
+		}
